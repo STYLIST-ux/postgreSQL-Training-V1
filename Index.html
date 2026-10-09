@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tasks</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="header">
+      <div>
+        <span class="eyebrow">Productivity</span>
+        <h1>My Tasks</h1>
+        <p>Keep your day moving.</p>
+      </div>
+
+      <div class="task-count">
+        <span id="count">0</span>
+        <small>tasks</small>
+      </div>
+    </header>
+    <!-- Add task -->
+    <form id="taskForm" class="task-form">
+
+      <input
+        id="taskInput"
+        type="text"
+        placeholder="What needs to be done?"
+        autocomplete="off"
+      >
+
+      <button type="submit" id="addTask">
+        <span>+</span>
+        Add task
+      </button>
+
+    </form>
+
+    <div class="skele_cont">
+      <li class="skeleton"></li>
+      <li class="skeleton"></li>
+      <li class="skeleton"></li>
+    </div>
+    <!-- Task list -->
+    <ul id="taskList" class="task-list"></ul>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
